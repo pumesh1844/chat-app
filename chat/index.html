@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/style.css">
+  <title>ChatApp</title>
+</head>
+
+<body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzvfMWOvcOTKX-kJlHyIcxSRSKH4IoPgf6aw&usqp=CAU);">
+  <div class="container-fluid">
+    <div class="chat-container">
+      <header style="margin-left: 500px;" class="chat-header">
+
+        <h1 >Chat App</h1>
+      </header>
+      <main class="chat-main">
+       
+
+        <div class="conn" id="test">
+          <br><br><br><label for="from" style="color: rgb(221, 31, 189);">Sender:</label>
+          <input id="from" type="text" style="background-color: #c4e3eb;"  autocomplete="off" placeholder="Enter Your Name.." required />
+          <br><br><label for="to" style="color: rgb(88, 8, 235);">Reciever:</label><br>
+          <input id="to" type="text" style="background-color: #c4e3eb;"  autocomplete="off" placeholder="Enter Who You are Sending to.."
+            required />
+          <button class="btn2"  style="background-color: #cad7dd;" onclick="storeDetails()">Start Conversation</button>
+          <br><br>
+        </div>
+      </main>
+      <div id="test1" style="background-color: white;">
+      <div class="chat-messages">
+        <div class="message"></div>
+      </div>
+      <div class="chat-form-container" style="background-color: rgb(9, 49, 58);">
+        <form id="chat-form">
+          <input id="msg" type="text" style="background-color: #c4e3eb;" placeholder="Enter Message" required
+            autocomplete="off" />
+          <button class="btn" style="background-color: #cad7dd;">Send</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+    integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous">
+    </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+
+</html>
